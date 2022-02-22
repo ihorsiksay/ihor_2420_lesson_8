@@ -1,0 +1,405 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Taviraj&display=swap");
+@import "null.css";
+body {
+  font-family: Lato;
+  font-style: normal;
+  font-size: 16px;
+  color: #424551;
+}
+.wrapper {
+  width: 1920px;
+}
+.conteiner {
+  max-width: 1230px;
+  margin: 180px auto;
+}
+.subtitle {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  line-height: 150%;
+}
+h1 {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  margin: 0px 0px 40px 0px;
+}
+.list {
+  max-width: 389px;
+  margin: 0px 0px 48px 0px;
+}
+.list li {
+  color: #424551;
+  line-height: 160%;
+  margin: 0px 0px 12px 0px;
+  padding: 0px 0px 0px 32px;
+}
+.list li::before {
+  display: inline-block;
+  content: "";
+  width: 16px;
+  min-height: 16px;
+  margin: 0px 13px -2px -32px;
+  background: url("../img/Vector.svg") 0 0px no-repeat;
+}
+.list *:last-child {
+  margin-bottom: 0px;
+}
+.btn {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  line-height: 44px;
+  text-align: center;
+  width: 161px;
+  height: 44px;
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  border-radius: 4px;
+  margin: 0px 0px 50px 0px;
+}
+.btn:hover {
+  background: linear-gradient(55.95deg, #dd352f 0%, #dd5404 100%);
+}
+.subtitle__too {
+  font-family: "Taviraj";
+  font-weight: 400;
+  font-size: 36px;
+  letter-spacing: 0.02em;
+  color: #333333;
+  margin: 0px 0px 80px 0px;
+}
+.subtitle__too::after {
+  /*
+     ========   лінія під обєктом ==========
+  display: block; - робить блочним
+  height: 1px;    - висота лінії
+  width: 65px;   - ширина линії
+  width: 60%;   - ширина линії у відсотках ширини обєкта
+  background: #333333; - колір лінії
+  */
+  content: "";
+  display: block;
+  height: 1px;
+  width: 65px;
+  background: #333333;
+  margin: 8px 0px 8px 0px;
+}
+.text__one {
+  max-width: 700px;
+  padding: 15px;
+  font-size: 17px;
+  line-height: 1.4;
+  margin: 0px 0px 40px 0px;
+}
+.num-list {
+  font-size: 18px;
+  counter-reset: item;
+}
+.num-list li {
+  /* вітстань між рядками */
+  margin: 0px 0px 14px 0px;
+}
+.num-list li::before {
+  /* ------------  нумерація списку  ---------------
+  нумерація списку з додатковими елементами 
+  content: "(" counter(item) ")"; - в лапки записується будь який елемент, до слова counter елемент буде до цифри, після слова counter буде після цифри
+  */
+  font-size: 10px;
+  counter-increment: item;
+  content: "(" counter(item) ")";
+  margin: 0px 10px 0px 0px;
+  color: rgb(224, 52, 52);
+}
+.text__one:hover {
+  /* .text__one:hover - спрацьовує при наведенні миші 
+   cursor: pointer; - перетворює стрілочку на руку, при наведенні на обєкт, навіть якщо це не посилання чи кнопка
+   */
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  background-color: rgb(133, 133, 133);
+  border-radius: 10px;
+  box-shadow: 0px 80px 80px -20px rgba(102, 102, 102, 0.253);
+}
+.btn__one {
+  /* text-align: center; - текст вирівнюється по центру 
+   line-height: 50px; - текст вирівнюється по середені висоти кнопки, 50px це висота кнопки
+   display: inline-block; - блочно-рядкове, працює для рядкового всластивості висота, ширина
+   text-transform: uppercase; - прописні букви
+   */
+  text-transform: uppercase;
+  letter-spacing: 0.1px;
+  text-align: center;
+  line-height: 50px;
+  display: inline-block;
+  width: 170px;
+  height: 50px;
+  color: rgb(250, 250, 250);
+  background-color: rgb(19, 167, 86);
+  border-radius: 10px;
+  margin: 0px 0px 50px 0px;
+}
+.btn__one:hover {
+  background-color: rgb(21, 99, 53);
+  box-shadow: 0px 5px 10px 10px rgba(196, 196, 196, 0.397);
+}
+.btn__one:active {
+  /* .btn__one:active - стан спрацьовує при нажиманні на елемент */
+  background-color: rgb(6, 32, 17);
+}
+.text__too {
+  margin: 0px 0px 50px 0px;
+}
+.btntoo {
+  /* box-shadow: 0px 8px 0px 0px rgb(72, 93, 138); жостка тінь створює нижній обєм */
+  text-transform: uppercase;
+  letter-spacing: 3.7px;
+  text-align: center;
+  line-height: 50px;
+  display: inline-block;
+  width: 170px;
+  height: 50px;
+  color: rgb(250, 250, 250);
+  background-color: rgb(82, 161, 235);
+  border-radius: 25px;
+  box-shadow: 0px 8px 0px 0px rgb(72, 93, 138);
+  margin: 0px 0px 50px 0px;
+}
+.btntoo:hover {
+  /* кнопка упускається на 2px вниз*/
+  /* margin: 2px 0px 0px 0px; */
+  background-color: rgb(0, 38, 73);
+}
+.btntoo:active {
+  /* margin: 2px 0px 0px 0px; кнопка упускається вниз
+   box-shadow: inset 0px 0px 5px 0px rgb(58, 76, 116); внутрішня тінь */
+  /* margin: 2px 0px 0px 0px; */
+  box-shadow: inset 0px 0px 5px 0px rgb(58, 76, 116);
+}
+.btntoo:visited {
+  /* .btntoo:visited  -показує, що посилання вже було відвідуване */
+  background-color: rgba(196, 196, 196, 0.397);
+}
+.btntoo:focus {
+  /* .btntoo:focus -часто до елементів форм застосовується, до інпутів, при нажиманні залишається focus ті елементи декору які були на focus записані
+   outline: none; -зникає браузерна обводка 
+   зірочка і focus {
+      outline: none;
+   }  і для всіх елементів зникає focus*/
+  outline: 5px dotted gold;
+}
+.button {
+  display: inline-block;
+  font-size: 18px;
+  text-align: center;
+  line-height: 44px;
+  width: 150px;
+  height: 44px;
+  color: rgb(255, 255, 255);
+  background-color: hotpink;
+  border-radius: 8px;
+  margin: 0px 0px 40px 0px;
+}
+.excerpt {
+  max-width: 500px;
+  background-color: rgb(145, 180, 109);
+  border-radius: 5px;
+  padding: 15px;
+  margin: 0px 0px 20px 0px;
+}
+.excerpt:target {
+  /* 
+   <a class="button" href="#text-block">ipsum</a>
+         <p id="text-block" class="excerpt">Lorem ipsum dolor sit!</p>
+         :target - спрацьовує коли являється елементом на який посилаюсься 
+         при нажиманні кнопки фон текста змінює коліри*/
+  background-color: rgb(169, 170, 168);
+}
+.text-block p {
+  max-width: 700px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: rgb(149, 185, 113);
+  margin: 0px 0px 20px 0px;
+}
+
+/* ---------------  :first-child   ----------------- 
+:first-of-type 
+:first-child
+*/
+
+.text-block p:first-of-type {
+  /* :first-child - перщий обєкт змінює властивість 
+   .text-block p:first-child - звернення до всіх <p> у 
+   .text-block якщо зявляється якиїсь елемент до <p> то працювати не буде
+   .text-block *:first-child - звернення до всіх перших елементів, 
+   .text-block *:first-of-type - то перші елементи будуть задіюватись якщо вони різні то перші перші <span> <p>
+   .text-block p:first-of-type - перший елемент <p> буде змінюватись навіть якщо є інші до прикладу <span>
+   */
+  background-color: rgb(180, 143, 131);
+}
+/* ------- щоб останній елемент не мав margin ----
+забирає відступ у останього елемента, будь якого
+класс > *:last-child
+.text-block > *:last-child {
+   margin-bottom: 0px;
+} 
+*/
+
+/* :last-child - звернення до останього елементу 
+   :last-of-type - звернення до останього елементу 
+*/
+.text-block p:last-of-type {
+  background-color: rgb(180, 143, 131);
+}
+
+/* ----------------  :nth-child    ----------------- 
+
+:nth-child (2) - порядковий номер елементів
+*/
+.text-blockone p {
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgb(170, 203, 211);
+  margin: 0px 0px 20px 90px;
+}
+/* звернення через кому до наступного обекту */
+.text-blockone p:nth-child(2),
+.text-blockone p:nth-child(3) {
+  background-color: rgb(224, 175, 175);
+}
+.text-nth p {
+  max-width: 600px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(232, 246, 250);
+  margin: 0px 0px 10px 90px;
+}
+.text-nth p:first-child {
+  /* забирае останній відступ */
+  margin-bottom: 0px;
+}
+/* -----------   :nth-child(odd)  ---------    
+ :nth-child(odd)  - звернення до кожного другого обекту 1 3 5 7   непарні  */
+.text-nth p:nth-child(odd) {
+  background-color: rgb(250, 232, 248);
+}
+/* ----------   :nth-child(even)  ----------- 
+:nth-child(even) - звернення до кожного другого обекту 2 4 6 8  парні
+*/
+.text-nth p:nth-child(even) {
+  background-color: rgb(232, 250, 242);
+}
+/* ------------   :nth-of-type (2)  ----------------
+:nth-of-type (2) - звернення до конкретних елементів
+*/
+/* .text-nth p:nth-of-type(2) {
+   background-color: rgb(232, 250, 242);
+} */
+/* ------------   :nth-of-type (odd)  ----------------
+:nth-of-type (2) - звернення до непарних елементів
+*/
+/* ------------   :nth-of-type (even)  ----------------
+:nth-of-type (2) - звернення до парних елементів
+*/
+
+/* :not - працює для всіх елементів в классі .text-nth р окрім класса .text */
+/* .text-nth p:not(.text) {
+  background-color: rgb(36, 122, 83);
+} */
+
+.blockquote p {
+  max-width: 500px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(121, 187, 206);
+  margin: 0px 0px 40px 90px;
+}
+
+.blockquote p:not(:last-child) {
+  color: rgb(252, 66, 66);
+  background-color: rgb(128, 196, 61);
+  margin-bottom: 40px;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++ */
+/*                псевдоелементи            */
+
+/* 
+::first-line - перший рядок текста, з ним можуть відбуватись різні зміни в стилі
+*/
+.blockquote::first-line {
+  color: #000;
+  font-size: 18px;
+  line-height: 1.7;
+}
+/* 
+::first-letter - (буквиця) перша буква в тексті, з нею можуть відбуватись різні зміни в стилі
+*/
+.blockquote::first-letter {
+  color: #000;
+  font-size: 27px;
+}
+
+/* 
+::before - додавання контенту до основного змісту обєкта 
+::after - додавання контенту після основного змісту обєкта 
+
+1) ::before и ::after НЕ працюють 
+без параметра content:"";
+2) ::before и ::after - рядкові!!!
+*/
+.list__pseudo li {
+  max-width: 600px;
+  font-size: 18px;
+  line-height: 1.6;
+  /* padding - відстань в ліво */
+  padding: 0px 0px 0px 36px;
+}
+/* 
+display: inline-block; - перетворює в блочно-сторчний
+display: block; - перетворює в блочний
+ */
+.list__pseudo li::before {
+  display: inline-block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url("../img/icon1.png") 0 0px / 20px no-repeat;
+  /* 
+  margin - відстань в право компенсує padding 
+  відстань вниз опускає зображення
+  відстань в право відокремлює від тексту
+  */
+  margin: 0px 10px -10px -28px;
+}
+.text__psevdo::before {
+  content: "'";
+  color: rgb(65, 14, 247);
+}
+/* 
+все, що зявляється в середені  лапок "" буде до , або після основного змісту 
+*/
+.text__psevdo::after {
+  content: "'";
+  color: rgb(247, 14, 14);
+}
+.not {
+  display: inline-block;
+  text-decoration: underline;
+  color: rgb(250, 33, 33);
+  font-size: 18px;
+}
+.not:active {
+  display: ;
+}
+.not__text:active {
+  display: none;
+}
+.not__text:hover {
+  visibility: hidden;
+}
